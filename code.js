@@ -34,7 +34,7 @@ fetch('https://dummyjson.com/user/me', {
 .then(console.log);
 
 
-// Obter um usuário único //
+// Ter um usuário único //
 fetch('https://dummyjson.com/users/1')
 .then(res => res.json())
 .then(console.log);
@@ -59,14 +59,12 @@ fetch('https://dummyjson.com/users?limit=5&skip=10&select=firstName,age')
 
 
 // Achar perfis de usuários pelo ID //
-/* getting carts of user with id 6 */
 fetch('https://dummyjson.com/users/6/carts')
 .then(res => res.json())
 .then(console.log);
 
 
 // Identificar as atividades do usuário pelo ID //
-/* getting todos of user with id 5 */
 fetch('https://dummyjson.com/users/5/todos')
 .then(res => res.json())
 .then(console.log);
@@ -80,7 +78,6 @@ fetch('https://dummyjson.com/users/add', {
     firstName: 'Muhammad',
     lastName: 'Ovi',
     age: 250,
-    /* other user data */
   })
 })
 .then(res => res.json())
@@ -88,9 +85,8 @@ fetch('https://dummyjson.com/users/add', {
 
 
 // Atualizar um usuário //
-/* updating lastName of user with id 2 */
 fetch('https://dummyjson.com/users/2', {
-  method: 'PUT', /* or PATCH */
+  method: 'PUT', 
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
     lastName: 'Owais'
@@ -106,5 +102,3 @@ fetch('https://dummyjson.com/users/1', {
 })
 .then(res => res.json())
 .then(console.log);
-
-
