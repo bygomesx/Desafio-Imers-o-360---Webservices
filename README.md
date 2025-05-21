@@ -2,7 +2,7 @@ Desafio-Imersão 360 - Webservices
 <br>
 <br>
 Atividades:
-<br>
+
 1. Listar todos os usuários: Linhas 4 até 6.
 <br>
 2. Buscar informações de um usuário específico: Linhas 44 até 46.
